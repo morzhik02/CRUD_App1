@@ -5,20 +5,20 @@
     <title>Update person</title>
 </head>
 <body>
-    <form th:method="PATCH" th:action="@{/people/{id}(id=${person.getId()})}" th:object="${person}">
-        <label for="name">Enter name:</label>
+    <form th:method="patch" th:action="@{/people/{id}(id=${person.getid()})}" th:object="${person}">
+        <label for="name">enter name:</label>
         <input type="text" th:field="*{name}" id="name"/>
-        <div style="color: crimson" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error</div>
+        <div style="color: crimson" th:if="${#fields.haserrors('name')}" th:errors="*{name}">name error</div>
         <br>
-        <label for="age">Enter age: </label>
+        <label for="age">enter age: </label>
         <input type="text" th:field="*{age}" id="age"/>
-        <div style="color: crimson" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age error</div>
+        <div style="color: crimson" th:if="${#fields.haserrors('age')}" th:errors="*{age}">age error</div>
         <br>
-        <label for="email">Enter email: </label>
+        <label for="email">enter email: </label>
         <input type="text" th:field="*{email}" id="email"/>
-        <div style="color: crimson" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email error</div>
+        <div style="color: crimson" th:if="${#fields.haserrors('email')}" th:errors="*{email}">email error</div>
         <br>
-        <input type="submit" value="Update!"/>
+        <input type="submit" value="update!"/>
     </form>
 </body>
 </html>

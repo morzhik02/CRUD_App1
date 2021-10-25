@@ -5,8 +5,6 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import ru.izteleumarzhan.springcourse.models.Person;
-
-import java.sql.*;
 import java.util.List;
 
 @Component
